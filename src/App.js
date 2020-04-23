@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+// import styles from "./app.module.css";
 
-import styles from "./app.module.css";
-
-function App() {
-    return <div>hello</div>;
+class App extends Component {
+    render() {
+        return <div>hello</div>;
+    }
 }
 
 export default App;
