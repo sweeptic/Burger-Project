@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/Aux_";
+// import Aux from "../../hoc/Aux_";
+// import styles from "./layout.module.css";
+// import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
+// import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
+// import DrawerToggle from './../../components/Navigation/SideDrawer/DrawerToggle/DrawerToggle';
+import Aux from '../Aux_/Aux_';
 import styles from "./layout.module.css";
-import Toolbar from "./../Navigation/Toolbar/Toolbar";
-import SideDrawer from "./../Navigation/SideDrawer/SideDrawer";
-import DrawerToggle from './../Navigation/SideDrawer/DrawerToggle/DrawerToggle';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+
 
 class Layout extends Component {
     state = {
