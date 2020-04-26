@@ -3,6 +3,7 @@ import Aux from "../../hoc/Aux_";
 import styles from "./layout.module.css";
 import Toolbar from "./../Navigation/Toolbar/Toolbar";
 import SideDrawer from "./../Navigation/SideDrawer/SideDrawer";
+import DrawerToggle from './../Navigation/SideDrawer/DrawerToggle/DrawerToggle';
 
 class Layout extends Component {
     state = {
@@ -13,10 +14,14 @@ class Layout extends Component {
         this.setState({ showSideDrawer: false });
     };
 
+    SideDrawerToggleHandler = (prevState) => {
+        this.setState({ showSideDrawer: !prevState.showSideDrawer });
+    }
+
     render() {
         return (
             <Aux>
-                <Toolbar />
+                <Toolbar drawerToggleClicked =  {this.SideDrawerToggleHandler} />
                 <SideDrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler}
